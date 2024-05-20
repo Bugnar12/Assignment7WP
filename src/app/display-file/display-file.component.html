@@ -1,0 +1,27 @@
+<div>
+  <section style="float: left; display: inline;">
+    <br>
+    <table class="all-documents">
+      <thead>
+      <th>ID</th>
+      <th>TITLE</th>
+      <th>FORMAT TYPE</th>
+      <th>GENRE</th>
+      <th>PATH</th>
+      <th> </th>
+      </thead>
+      <tbody>
+      <tr *ngFor="let file of files">
+        <td>{{file.id}}</td>
+        <td>{{file.title}}</td>
+        <td>{{file.format_type}}</td>
+        <td>{{file.genre}}</td>
+        <td>{{file.path}}</td>
+        <td>
+          <!-- You can add actions like edit, delete here -->
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
